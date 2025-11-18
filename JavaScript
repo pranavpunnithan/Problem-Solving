@@ -1,7 +1,5 @@
 // Find longest word in the string
 
-
-
 function find(str){
 let words=str.split(" ");
 let largest=" ";
