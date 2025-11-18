@@ -42,3 +42,22 @@ for(let word of words){
  return arr1.join("")
 }
 console.log(check("i love programming"))
+
+
+//palindrome
+
+function checkPalindrome(val){
+    let rev = "";
+
+    for(let ch of val){
+        rev = ch + rev;
+    }
+
+    if(val === rev){
+        return "Palindrome";
+    }else{
+        return "Not Palindrome";
+    }
+}
+
+console.log(checkPalindrome("madam")); // Output: "Palindrome"
