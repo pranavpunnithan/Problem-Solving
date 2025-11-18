@@ -26,10 +26,19 @@ for(let word of words){
 }    
  return arr1
 }
-
-
-
-
-
-
 console.log(check("abc"))
+
+
+// Remove vowels from the sentence
+
+function check(val){
+let words=val.split("")
+let arr1=[]
+for(let word of words){
+    if(word!="a"&& word!="e" && word!="i" && word!="o" && word!="u"){
+    arr1.push(word)   
+    }
+}    
+ return arr1.join("")
+}
+console.log(check("i love programming"))
