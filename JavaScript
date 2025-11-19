@@ -158,3 +158,21 @@ function getinvoice(invoices,id){
     }
 }
 getinvoice(invoices,203)
+
+//2nd qn:Find customer name by customerId
+
+const customers = [
+  { id: 1, name: "Arun" },
+  { id: 2, name: "Kiran" },
+  { id: 3, name: "Nazreen" },
+];
+
+function customer(customers,id){
+    let cr=customers.find((crs)=>crs.id===id)
+    if (cr){
+        console.log(cr.name)
+    }
+}
+
+customer(customers,3)
+
