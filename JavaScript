@@ -192,19 +192,30 @@ for(let i=0;i<arr.length;i++){
 
 //avg
 
-
 let arr = [5, 3, 7, 3, 9];
 let val=0;
 let count=0;
 for(let i=0;i<arr.length;i++){
 count++;    
 val=val+arr[i];
-
-
 }
-
 let avg= val/count;
 console.log(Math.floor(avg));
+
+// Count the number of even and odd numbers in an array.
+
+let arr = [1,5,3,4,7,3,9];
+
+let odd=0;
+let even=0;
+
+for(let num of arr){
+    if(num%2===0){
+        even++
+    }else
+    odd++
+}
+console.log(`odd count: ${odd},even count:${even}`)
 
 
 
