@@ -118,3 +118,43 @@ for(let i=0;i<arr.length;i++){
 }
 
 console.log(arr1);
+
+
+
+//array of objects
+
+const invoices = [
+  {
+    id: 201,
+    customerId: 10,
+    total: 1500,
+    status: "paid",
+    items: ["monitor", "cable"],
+  },
+  { id: 202, customerId: 11, total: 2300, status: "unpaid", items: ["laptop"] },
+  {
+    id: 203,
+    customerId: 10,
+    total: 600,
+    status: "paid",
+    items: ["keyboard", "mouse"],
+  },
+  {
+    id: 204,
+    customerId: 12,
+    total: 800,
+    status: "cancelled",
+    items: ["webcam"],
+  },
+  { id: 205, customerId: 15, total: 800, status: "cancelled", items: null },
+];
+
+
+function getinvoice(invoices,id){
+    const invoice=invoices.find((inv)=>inv.id===id)
+    
+    if(invoice){
+        console.log(invoice.items.join(","))
+    }
+}
+getinvoice(invoices,203)
