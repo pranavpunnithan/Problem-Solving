@@ -190,6 +190,22 @@ for(let i=0;i<arr.length;i++){
 }
 
 
-//
+//avg
+
+
+let arr = [5, 3, 7, 3, 9];
+let val=0;
+let count=0;
+for(let i=0;i<arr.length;i++){
+count++;    
+val=val+arr[i];
+
+
+}
+
+let avg= val/count;
+console.log(Math.floor(avg));
+
+
 
 
