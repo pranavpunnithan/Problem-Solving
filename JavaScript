@@ -176,3 +176,20 @@ function customer(customers,id){
 
 customer(customers,3)
 
+
+//First occurance of the target
+
+let arr = [5, 3, 7, 3, 9];
+let target=3;
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]===target){
+    console.log(i)
+    break;
+    }
+}
+
+
+//
+
+
