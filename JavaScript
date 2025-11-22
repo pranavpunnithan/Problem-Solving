@@ -218,5 +218,79 @@ for(let num of arr){
 console.log(`odd count: ${odd},even count:${even}`)
 
 
+// Count how many times each element appears.
 
+const arr = [1,2,3,1,2,3]
+let freq = {}
+
+for (let num of arr) {
+  if (freq[num]) {
+    freq[num] = freq[num] + 1
+  } else {
+    freq[num] = 1
+  }
+}
+console.log(freq)
+
+Code Breakdown
+javascriptconst arr = [1,2,3,1,2,3]
+let freq = {}
+
+arr: array with duplicate numbers
+freq: empty object to store frequency counts
+
+javascriptfor (let num of arr) {
+Loop through each number in the array, one by one.
+The If-Else Logic
+javascriptif (freq[num]) {
+    freq[num] = freq[num] + 1
+} else {
+    freq[num] = 1
+}
+This checks: Does freq[num] already exist?
+Case 1: Property EXISTS (truthy)
+javascriptif (freq[num]) {  // true
+    freq[num] = freq[num] + 1  // increment the count
+}
+Case 2: Property DOESN'T EXIST (falsy/undefined)
+javascriptelse {
+    freq[num] = 1  // first time seeing this number
+}
+Complete Walkthrough
+Let's trace through the entire array:
+Loop 1: num = 1
+javascriptCheck: freq[1] exists? NO (undefined)
+       undefined is falsy
+Goes to: else block
+Action: freq[1] = 1
+Result: freq = {1: 1}
+Loop 2: num = 2
+javascriptCheck: freq[2] exists? NO (undefined)
+Goes to: else block
+Action: freq[2] = 1
+Result: freq = {1: 1, 2: 1}
+Loop 3: num = 3
+javascriptCheck: freq[3] exists? NO (undefined)
+Goes to: else block
+Action: freq[3] = 1
+Result: freq = {1: 1, 2: 1, 3: 1}
+Loop 4: num = 1 (again!)
+javascriptCheck: freq[1] exists? YES (it's 1)
+       1 is truthy
+Goes to: if block
+Action: freq[1] = 1 + 1 = 2
+Result: freq = {1: 2, 2: 1, 3: 1}
+Loop 5: num = 2 (again!)
+javascriptCheck: freq[2] exists? YES (it's 1)
+Goes to: if block
+Action: freq[2] = 1 + 1 = 2
+Result: freq = {1: 2, 2: 2, 3: 1}
+Loop 6: num = 3 (again!)
+javascriptCheck: freq[3] exists? YES (it's 1)
+Goes to: if block
+Action: freq[3] = 1 + 1 = 2
+Result: freq = {1: 2, 2: 2, 3: 2}
+Final Output
+javascriptconsole.log(freq)
+// Output: {1: 2, 2: 2, 3: 2}
 
