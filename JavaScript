@@ -294,3 +294,19 @@ Final Output
 javascriptconsole.log(freq)
 // Output: {1: 2, 2: 2, 3: 2}
 
+
+//Reverse the string
+
+
+
+let str="i love programming";
+let as=" ";
+
+for(let run of str){
+    as=run+as;
+}
+
+console.log(as)
+
+
+
