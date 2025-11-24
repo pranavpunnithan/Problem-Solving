@@ -362,3 +362,24 @@ for(let i=0;i<arr1.length;i++){
 if(ft===true) console.log("its reverse")
 else console.log("its not reverse")
 
+//2 arrays different orders
+
+arr1 = [7, 8, 9, 7];
+arr2 = [9, 7, 7, 8];
+
+let ft=true
+for(let i=0;i<arr1.length;i++){
+let found=false;
+for(let j=0;j<arr2.length;j++){
+if(arr1[i]===arr2[j]){
+found=true;
+break;
+}    
+}
+if(found===false){
+    ft=false;
+    break;
+}
+}
+if(ft===true)console.log("inorder")
+else console.log("not in inorder")
