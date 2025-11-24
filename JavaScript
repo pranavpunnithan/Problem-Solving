@@ -342,3 +342,23 @@ if(arr1[i]!==arr2[i]){
 }
 if(ft)console.log("same");
 else console.log("notsame")
+
+//array checking reverse or not
+
+arr1 = [2, 4, 6, 8];
+arr2 = [8, 6, 4, 2];
+ let ar=[]
+ let ft=false;
+for(let i=arr2.length-1;i>=0;i--){
+ar.push(arr2[i])
+}
+
+
+for(let i=0;i<arr1.length;i++){
+    if(arr1[i]===ar[i]){
+    ft=true;
+    }
+}
+if(ft===true) console.log("its reverse")
+else console.log("its not reverse")
+
