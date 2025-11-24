@@ -328,3 +328,17 @@ for(let i=0;i<arr.length;i++){
     console.log("palindrome") 
     else console.log("not palindrome")
 
+
+//elements are same or not
+
+let arr1 = [5, 10, 15, 20];
+let arr2 = [5, 10, 15, 20];
+let ft=true
+for(let i=0;i<arr1.length;i++){
+if(arr1[i]!==arr2[i]){
+  ft=false;
+  break;
+}
+}
+if(ft)console.log("same");
+else console.log("notsame")
