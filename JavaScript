@@ -308,5 +308,23 @@ for(let run of str){
 
 console.log(as)
 
+//palindrome
 
+let arr = [1, 4, 3, 2, 1];
+let rev=[]
+let ft=true;
+for(let i=arr.length-1;i>=0;i--){
+rev.push(arr[i])
+}
+
+for(let i=0;i<arr.length;i++){
+       if(arr[i]!==rev[i]){
+       ft=false
+       break;
+       }
+}
+
+    if(ft===true)
+    console.log("palindrome") 
+    else console.log("not palindrome")
 
