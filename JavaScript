@@ -397,3 +397,14 @@ for(let i=0;i<arr.length;i++){
 }
 arr.length=k
 console.log(arr) 
+
+//count characters in array
+
+let x="hello"
+let str=x.split("")
+let val=0;
+for(let num of str ){
+val++    
+    
+}
+console.log(val)
