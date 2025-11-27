@@ -408,3 +408,30 @@ val++
     
 }
 console.log(val)
+
+
+//Create a function that returns a Promise which resolves with "My first promise".
+
+function msg(){
+    
+    return new Promise(function(resolve){
+        resolve("my first promise")
+    })
+}
+
+msg().then(function(value){
+    console.log(value)
+})
+
+//Return a Promise resolving with 25, then print value + 5.
+
+function find(){
+    
+ return new Promise(function(resolve){
+     resolve(25);
+ })
+}
+
+find().then(function(value){
+    console.log(value +5);
+})
