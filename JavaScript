@@ -435,3 +435,38 @@ function find(){
 find().then(function(value){
     console.log(value +5);
 })
+
+// resolve "Done waiting"
+
+const y= new Promise (function(resolve){
+setTimeout(function(){
+    resolve("Done waiting")
+},5000) 
+})
+
+y.then(function(value){
+    console.log(value)
+})
+
+
+//❓ Question
+
+If age ≥ 18 → resolve
+Else → reject
+
+function calc(val){
+    return new Promise(function(resolve,reject){
+        if(val>=18){
+            resolve("Adult")
+        }else{
+            reject("Minor")
+        }
+    }) 
+}
+
+calc(17).then(function(value){
+    console.log(value)
+})
+.catch(function(err){
+    console.log(err)
+})
