@@ -470,3 +470,33 @@ calc(17).then(function(value){
 .catch(function(err){
     console.log(err)
 })
+
+
+
+//Find the largest
+let arr = [4,8,1,6]
+
+let largest = arr[0]
+
+for(let i=1;i<arr.length;i++){
+    if(arr[i] > largest){
+        largest = arr[i]
+    }
+}
+
+console.log(largest)
+
+
+//check the value from array
+let val=[2,3,45,6,8,9,0]
+let result=check(val,6)
+function check(val,x){
+    for(let i=0;i<val.length-1;i++){
+        if(val[i]===x){
+            return i
+        }
+    }
+    return -1
+}
+
+console.log(result);
