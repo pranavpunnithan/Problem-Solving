@@ -521,3 +521,21 @@ function check(val){
 
 
 console.log(result);
+
+
+
+//minimum value 
+
+let val=[1,65,75,7888,8,0487]
+
+let min=Infinity
+
+
+for(let i=0;i<val.length;i++){
+    if(val[i]<min){
+        min=val[i]
+    }
+}
+
+
+console.log(min)
