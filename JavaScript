@@ -578,3 +578,10 @@ const y= x.filter((val)=>{
 })
 
 console.log(y)
+
+
+const x=[0, "hi", "", null, 42, undefined]
+
+const y=x.filter(Boolean);
+
+console.log(y)
