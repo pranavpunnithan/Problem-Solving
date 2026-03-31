@@ -559,3 +559,22 @@ const y=x.map((val)=>{
 })
 
 console.log(y)
+
+//bigger than 10
+const x=[1,4,5,7,89,9]
+
+for(let i=0;i<x.length;i++){
+    if(x[i]>10){
+        console.log(x[i])
+    }
+}
+
+
+
+const x=[1,4,5,7,89,9]
+
+const y= x.filter((val)=>{
+    return val>10
+})
+
+console.log(y)
